@@ -1,0 +1,29 @@
+﻿using Microsoft.Xrm.Sdk;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace adesso_XTB_Plugins.DocumentTemplateExport
+{
+    public class DocumentTemplateModel
+    {
+        public string Prefix { get; set; }
+        public string DocumentType { get; set; }
+        public string Name { get; set; }
+        public DateTime? ModifiedOn { get; set; }
+        public string ModifiedBy { get; set; }
+        public string Description { get; set; }
+        public string FilePath { get; set; }
+        public string Content { get; set; }
+        public string EntityType { get; set; }
+        public Guid Id { get; set; }
+        public bool CreatedNew { get; set; }
+
+        public string GetFileName()
+        {
+            return $"{Name}_{Prefix}_{Id}{DocumentType}";
+        }
+    }
+}

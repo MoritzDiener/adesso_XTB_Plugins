@@ -1,0 +1,609 @@
+﻿namespace adesso_XTB_Plugins.DocumentTemplateExport
+{
+    partial class DocumentTemplateExport
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.LblFilePath = new System.Windows.Forms.Label();
+            this.FbdDirectory = new System.Windows.Forms.FolderBrowserDialog();
+            this.TxtDirectoryPath = new System.Windows.Forms.TextBox();
+            this.TabCtrlDocumentTemplate = new System.Windows.Forms.TabControl();
+            this.TabCrmDocumentTemplates = new System.Windows.Forms.TabPage();
+            this.DgvCrmDocumentTemplates = new System.Windows.Forms.DataGridView();
+            this.TabDocumentTemplate = new System.Windows.Forms.TabPage();
+            this.DgvDocumentTemplate = new System.Windows.Forms.DataGridView();
+            this.TtBtnDirectoryFolderDialog = new System.Windows.Forms.ToolTip(this.components);
+            this.TtBtnOpenDirectory = new System.Windows.Forms.ToolTip(this.components);
+            this.TtBtnExport = new System.Windows.Forms.ToolTip(this.components);
+            this.TtBtnImport = new System.Windows.Forms.ToolTip(this.components);
+            this.TtTabCtrlDocumentTemplate = new System.Windows.Forms.ToolTip(this.components);
+            this.TsDocumentTemplateExport = new System.Windows.Forms.ToolStrip();
+            this.ToolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.ToolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.ToolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.ToolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.ToolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.ToolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.ToolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.ToolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.TsprgbLoadUpdate = new System.Windows.Forms.ToolStripProgressBar();
+            this.OfdAddTemplates = new System.Windows.Forms.OpenFileDialog();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.DocumentTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EntityTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ModifiedOnDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ModifiedByDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescriptionDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BsCrmTemplates = new System.Windows.Forms.BindingSource(this.components);
+            this.DocumentTypeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EntityTypeDatagridViewComboBox = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.ModifiedOnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ModifiedByDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FilePathDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BsDocumentTemplateObject = new System.Windows.Forms.BindingSource(this.components);
+            this.TsbtnClose = new System.Windows.Forms.ToolStripButton();
+            this.TsbtnLoadTemplates = new System.Windows.Forms.ToolStripButton();
+            this.TsbtnSaveTemplates = new System.Windows.Forms.ToolStripButton();
+            this.TsbtnOpenFilePathFolder = new System.Windows.Forms.ToolStripButton();
+            this.TsbtnEditTemplate = new System.Windows.Forms.ToolStripButton();
+            this.TsbtnUpdateTemplates = new System.Windows.Forms.ToolStripButton();
+            this.TsbtnAddTemplates = new System.Windows.Forms.ToolStripButton();
+            this.TsbtnCopyTemplate = new System.Windows.Forms.ToolStripButton();
+            this.TsbtnRemoveDgvSelectedItems = new System.Windows.Forms.ToolStripButton();
+            this.BtnDirectoryFolderDialog = new System.Windows.Forms.Button();
+            this.DsEntityTypeComboBoxBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.TabCtrlDocumentTemplate.SuspendLayout();
+            this.TabCrmDocumentTemplates.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvCrmDocumentTemplates)).BeginInit();
+            this.TabDocumentTemplate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvDocumentTemplate)).BeginInit();
+            this.TsDocumentTemplateExport.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BsCrmTemplates)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BsDocumentTemplateObject)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DsEntityTypeComboBoxBindingSource)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // LblFilePath
+            // 
+            this.LblFilePath.AutoSize = true;
+            this.LblFilePath.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LblFilePath.Location = new System.Drawing.Point(13, 36);
+            this.LblFilePath.Name = "LblFilePath";
+            this.LblFilePath.Size = new System.Drawing.Size(48, 13);
+            this.LblFilePath.TabIndex = 0;
+            this.LblFilePath.Text = "File Path";
+            // 
+            // TxtDirectoryPath
+            // 
+            this.TxtDirectoryPath.Location = new System.Drawing.Point(68, 33);
+            this.TxtDirectoryPath.Name = "TxtDirectoryPath";
+            this.TxtDirectoryPath.Size = new System.Drawing.Size(246, 20);
+            this.TxtDirectoryPath.TabIndex = 7;
+            this.TxtDirectoryPath.TextChanged += new System.EventHandler(this.TxtDirectoryPath_TextChanged);
+            this.TxtDirectoryPath.Leave += new System.EventHandler(this.TxtDirectoryPath_Leave);
+            // 
+            // TabCtrlDocumentTemplate
+            // 
+            this.TabCtrlDocumentTemplate.AllowDrop = true;
+            this.TabCtrlDocumentTemplate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TabCtrlDocumentTemplate.Controls.Add(this.TabCrmDocumentTemplates);
+            this.TabCtrlDocumentTemplate.Controls.Add(this.TabDocumentTemplate);
+            this.TabCtrlDocumentTemplate.Location = new System.Drawing.Point(16, 60);
+            this.TabCtrlDocumentTemplate.Name = "TabCtrlDocumentTemplate";
+            this.TabCtrlDocumentTemplate.SelectedIndex = 0;
+            this.TabCtrlDocumentTemplate.Size = new System.Drawing.Size(891, 507);
+            this.TabCtrlDocumentTemplate.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
+            this.TabCtrlDocumentTemplate.TabIndex = 8;
+            this.TabCtrlDocumentTemplate.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.TabCtrlDocumentTemplate_Selecting);
+            // 
+            // TabCrmDocumentTemplates
+            // 
+            this.TabCrmDocumentTemplates.Controls.Add(this.DgvCrmDocumentTemplates);
+            this.TabCrmDocumentTemplates.Location = new System.Drawing.Point(4, 22);
+            this.TabCrmDocumentTemplates.Name = "TabCrmDocumentTemplates";
+            this.TabCrmDocumentTemplates.Padding = new System.Windows.Forms.Padding(3);
+            this.TabCrmDocumentTemplates.Size = new System.Drawing.Size(883, 481);
+            this.TabCrmDocumentTemplates.TabIndex = 2;
+            this.TabCrmDocumentTemplates.Text = "CRM Data";
+            this.TabCrmDocumentTemplates.UseVisualStyleBackColor = true;
+            // 
+            // DgvCrmDocumentTemplates
+            // 
+            this.DgvCrmDocumentTemplates.AllowUserToAddRows = false;
+            this.DgvCrmDocumentTemplates.AllowUserToDeleteRows = false;
+            this.DgvCrmDocumentTemplates.AllowUserToResizeRows = false;
+            this.DgvCrmDocumentTemplates.AutoGenerateColumns = false;
+            this.DgvCrmDocumentTemplates.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DgvCrmDocumentTemplates.ColumnHeadersHeight = 21;
+            this.DgvCrmDocumentTemplates.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.DgvCrmDocumentTemplates.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DocumentTypeDataGridViewTextBoxColumn,
+            this.NameDataGridViewTextBoxColumn2,
+            this.EntityTypeDataGridViewTextBoxColumn,
+            this.ModifiedOnDataGridViewTextBoxColumn2,
+            this.ModifiedByDataGridViewTextBoxColumn2,
+            this.DescriptionDataGridViewTextBoxColumn2,
+            this.IdDataGridViewTextBoxColumn2});
+            this.DgvCrmDocumentTemplates.DataSource = this.BsCrmTemplates;
+            this.DgvCrmDocumentTemplates.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DgvCrmDocumentTemplates.Location = new System.Drawing.Point(3, 3);
+            this.DgvCrmDocumentTemplates.Name = "DgvCrmDocumentTemplates";
+            this.DgvCrmDocumentTemplates.ReadOnly = true;
+            this.DgvCrmDocumentTemplates.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.DgvCrmDocumentTemplates.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvCrmDocumentTemplates.Size = new System.Drawing.Size(877, 475);
+            this.DgvCrmDocumentTemplates.TabIndex = 0;
+            this.DgvCrmDocumentTemplates.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DgvCrmDocumentTemplates_MouseDown);
+            // 
+            // TabDocumentTemplate
+            // 
+            this.TabDocumentTemplate.Controls.Add(this.DgvDocumentTemplate);
+            this.TabDocumentTemplate.Location = new System.Drawing.Point(4, 22);
+            this.TabDocumentTemplate.Name = "TabDocumentTemplate";
+            this.TabDocumentTemplate.Padding = new System.Windows.Forms.Padding(3);
+            this.TabDocumentTemplate.Size = new System.Drawing.Size(883, 481);
+            this.TabDocumentTemplate.TabIndex = 0;
+            this.TabDocumentTemplate.Text = "Document Template";
+            this.TabDocumentTemplate.UseVisualStyleBackColor = true;
+            // 
+            // DgvDocumentTemplate
+            // 
+            this.DgvDocumentTemplate.AllowDrop = true;
+            this.DgvDocumentTemplate.AllowUserToAddRows = false;
+            this.DgvDocumentTemplate.AllowUserToDeleteRows = false;
+            this.DgvDocumentTemplate.AllowUserToResizeRows = false;
+            this.DgvDocumentTemplate.AutoGenerateColumns = false;
+            this.DgvDocumentTemplate.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DgvDocumentTemplate.ColumnHeadersHeight = 21;
+            this.DgvDocumentTemplate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.DgvDocumentTemplate.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DocumentTypeDataGridViewTextBoxColumn1,
+            this.NameDataGridViewTextBoxColumn,
+            this.EntityTypeDatagridViewComboBox,
+            this.ModifiedOnDataGridViewTextBoxColumn,
+            this.ModifiedByDataGridViewTextBoxColumn,
+            this.DescriptionDataGridViewTextBoxColumn,
+            this.FilePathDataGridViewTextBoxColumn,
+            this.IdDataGridViewTextBoxColumn});
+            this.DgvDocumentTemplate.DataSource = this.BsDocumentTemplateObject;
+            this.DgvDocumentTemplate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DgvDocumentTemplate.Location = new System.Drawing.Point(3, 3);
+            this.DgvDocumentTemplate.Name = "DgvDocumentTemplate";
+            this.DgvDocumentTemplate.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.DgvDocumentTemplate.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvDocumentTemplate.Size = new System.Drawing.Size(877, 475);
+            this.DgvDocumentTemplate.TabIndex = 0;
+            this.DgvDocumentTemplate.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvDocumentTemplate_CellDoubleClick);
+            this.DgvDocumentTemplate.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvDocumentTemplate_CellValueChanged);
+            this.DgvDocumentTemplate.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.DgvDocumentTemplate_RowsAdded);
+            this.DgvDocumentTemplate.DragDrop += new System.Windows.Forms.DragEventHandler(this.DgvDocumentTemplate_DragDrop);
+            this.DgvDocumentTemplate.DragEnter += new System.Windows.Forms.DragEventHandler(this.DgvDocumentTemplate_DragEnter);
+            this.DgvDocumentTemplate.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DgvDocumentTemplate_MouseDown);
+            // 
+            // TsDocumentTemplateExport
+            // 
+            this.TsDocumentTemplateExport.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TsbtnClose,
+            this.ToolStripSeparator1,
+            this.TsbtnLoadTemplates,
+            this.ToolStripSeparator2,
+            this.TsbtnSaveTemplates,
+            this.ToolStripSeparator7,
+            this.TsbtnOpenFilePathFolder,
+            this.ToolStripSeparator8,
+            this.TsbtnEditTemplate,
+            this.ToolStripSeparator3,
+            this.TsbtnUpdateTemplates,
+            this.ToolStripSeparator6,
+            this.TsbtnAddTemplates,
+            this.toolStripSeparator9,
+            this.TsbtnCopyTemplate,
+            this.ToolStripSeparator4,
+            this.TsbtnRemoveDgvSelectedItems,
+            this.ToolStripSeparator5,
+            this.TsprgbLoadUpdate});
+            this.TsDocumentTemplateExport.Location = new System.Drawing.Point(0, 0);
+            this.TsDocumentTemplateExport.Name = "TsDocumentTemplateExport";
+            this.TsDocumentTemplateExport.Size = new System.Drawing.Size(910, 25);
+            this.TsDocumentTemplateExport.TabIndex = 14;
+            this.TsDocumentTemplateExport.Text = "toolStrip1";
+            // 
+            // ToolStripSeparator1
+            // 
+            this.ToolStripSeparator1.Name = "ToolStripSeparator1";
+            this.ToolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // ToolStripSeparator2
+            // 
+            this.ToolStripSeparator2.Name = "ToolStripSeparator2";
+            this.ToolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // ToolStripSeparator7
+            // 
+            this.ToolStripSeparator7.Name = "ToolStripSeparator7";
+            this.ToolStripSeparator7.Size = new System.Drawing.Size(6, 25);
+            // 
+            // ToolStripSeparator8
+            // 
+            this.ToolStripSeparator8.Name = "ToolStripSeparator8";
+            this.ToolStripSeparator8.Size = new System.Drawing.Size(6, 25);
+            // 
+            // ToolStripSeparator3
+            // 
+            this.ToolStripSeparator3.Name = "ToolStripSeparator3";
+            this.ToolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // ToolStripSeparator6
+            // 
+            this.ToolStripSeparator6.Name = "ToolStripSeparator6";
+            this.ToolStripSeparator6.Size = new System.Drawing.Size(6, 25);
+            // 
+            // ToolStripSeparator4
+            // 
+            this.ToolStripSeparator4.Name = "ToolStripSeparator4";
+            this.ToolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            // 
+            // ToolStripSeparator5
+            // 
+            this.ToolStripSeparator5.Name = "ToolStripSeparator5";
+            this.ToolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            // 
+            // TsprgbLoadUpdate
+            // 
+            this.TsprgbLoadUpdate.Name = "TsprgbLoadUpdate";
+            this.TsprgbLoadUpdate.Size = new System.Drawing.Size(100, 22);
+            // 
+            // OfdAddTemplates
+            // 
+            this.OfdAddTemplates.Multiselect = true;
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 25);
+            // 
+            // DocumentTypeDataGridViewTextBoxColumn
+            // 
+            this.DocumentTypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DocumentTypeDataGridViewTextBoxColumn.DataPropertyName = "DocumentType";
+            this.DocumentTypeDataGridViewTextBoxColumn.HeaderText = "Document Type";
+            this.DocumentTypeDataGridViewTextBoxColumn.Name = "DocumentTypeDataGridViewTextBoxColumn";
+            this.DocumentTypeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // NameDataGridViewTextBoxColumn2
+            // 
+            this.NameDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NameDataGridViewTextBoxColumn2.DataPropertyName = "Name";
+            this.NameDataGridViewTextBoxColumn2.HeaderText = "Name";
+            this.NameDataGridViewTextBoxColumn2.Name = "NameDataGridViewTextBoxColumn2";
+            this.NameDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // EntityTypeDataGridViewTextBoxColumn
+            // 
+            this.EntityTypeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.EntityTypeDataGridViewTextBoxColumn.DataPropertyName = "EntityType";
+            this.EntityTypeDataGridViewTextBoxColumn.HeaderText = "Entity Type";
+            this.EntityTypeDataGridViewTextBoxColumn.Name = "EntityTypeDataGridViewTextBoxColumn";
+            this.EntityTypeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ModifiedOnDataGridViewTextBoxColumn2
+            // 
+            this.ModifiedOnDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ModifiedOnDataGridViewTextBoxColumn2.DataPropertyName = "ModifiedOn";
+            this.ModifiedOnDataGridViewTextBoxColumn2.HeaderText = "Modified On";
+            this.ModifiedOnDataGridViewTextBoxColumn2.Name = "ModifiedOnDataGridViewTextBoxColumn2";
+            this.ModifiedOnDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // ModifiedByDataGridViewTextBoxColumn2
+            // 
+            this.ModifiedByDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ModifiedByDataGridViewTextBoxColumn2.DataPropertyName = "ModifiedBy";
+            this.ModifiedByDataGridViewTextBoxColumn2.HeaderText = "Modified By";
+            this.ModifiedByDataGridViewTextBoxColumn2.Name = "ModifiedByDataGridViewTextBoxColumn2";
+            this.ModifiedByDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // DescriptionDataGridViewTextBoxColumn2
+            // 
+            this.DescriptionDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DescriptionDataGridViewTextBoxColumn2.DataPropertyName = "Description";
+            this.DescriptionDataGridViewTextBoxColumn2.HeaderText = "Description";
+            this.DescriptionDataGridViewTextBoxColumn2.Name = "DescriptionDataGridViewTextBoxColumn2";
+            this.DescriptionDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // IdDataGridViewTextBoxColumn2
+            // 
+            this.IdDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.IdDataGridViewTextBoxColumn2.DataPropertyName = "Id";
+            this.IdDataGridViewTextBoxColumn2.HeaderText = "Id";
+            this.IdDataGridViewTextBoxColumn2.Name = "IdDataGridViewTextBoxColumn2";
+            this.IdDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // BsCrmTemplates
+            // 
+            this.BsCrmTemplates.DataSource = typeof(adesso_XTB_Plugins.DocumentTemplateExport.DocumentTemplateObject);
+            // 
+            // DocumentTypeDataGridViewTextBoxColumn1
+            // 
+            this.DocumentTypeDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DocumentTypeDataGridViewTextBoxColumn1.DataPropertyName = "DocumentType";
+            this.DocumentTypeDataGridViewTextBoxColumn1.HeaderText = "Document Type";
+            this.DocumentTypeDataGridViewTextBoxColumn1.Name = "DocumentTypeDataGridViewTextBoxColumn1";
+            // 
+            // NameDataGridViewTextBoxColumn
+            // 
+            this.NameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.NameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.NameDataGridViewTextBoxColumn.Name = "NameDataGridViewTextBoxColumn";
+            // 
+            // EntityTypeDatagridViewComboBox
+            // 
+            this.EntityTypeDatagridViewComboBox.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.EntityTypeDatagridViewComboBox.DataPropertyName = "EntityType";
+            this.EntityTypeDatagridViewComboBox.HeaderText = "Entity Type";
+            this.EntityTypeDatagridViewComboBox.Name = "EntityTypeDatagridViewComboBox";
+            this.EntityTypeDatagridViewComboBox.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.EntityTypeDatagridViewComboBox.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // ModifiedOnDataGridViewTextBoxColumn
+            // 
+            this.ModifiedOnDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ModifiedOnDataGridViewTextBoxColumn.DataPropertyName = "ModifiedOn";
+            this.ModifiedOnDataGridViewTextBoxColumn.HeaderText = "Modified On";
+            this.ModifiedOnDataGridViewTextBoxColumn.Name = "ModifiedOnDataGridViewTextBoxColumn";
+            // 
+            // ModifiedByDataGridViewTextBoxColumn
+            // 
+            this.ModifiedByDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ModifiedByDataGridViewTextBoxColumn.DataPropertyName = "ModifiedBy";
+            this.ModifiedByDataGridViewTextBoxColumn.HeaderText = "Modified By";
+            this.ModifiedByDataGridViewTextBoxColumn.Name = "ModifiedByDataGridViewTextBoxColumn";
+            // 
+            // DescriptionDataGridViewTextBoxColumn
+            // 
+            this.DescriptionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DescriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
+            this.DescriptionDataGridViewTextBoxColumn.HeaderText = "Description";
+            this.DescriptionDataGridViewTextBoxColumn.Name = "DescriptionDataGridViewTextBoxColumn";
+            // 
+            // FilePathDataGridViewTextBoxColumn
+            // 
+            this.FilePathDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.FilePathDataGridViewTextBoxColumn.DataPropertyName = "FilePath";
+            this.FilePathDataGridViewTextBoxColumn.HeaderText = "File Path";
+            this.FilePathDataGridViewTextBoxColumn.Name = "FilePathDataGridViewTextBoxColumn";
+            // 
+            // IdDataGridViewTextBoxColumn
+            // 
+            this.IdDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.IdDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.IdDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.IdDataGridViewTextBoxColumn.Name = "IdDataGridViewTextBoxColumn";
+            // 
+            // BsDocumentTemplateObject
+            // 
+            this.BsDocumentTemplateObject.DataSource = typeof(adesso_XTB_Plugins.DocumentTemplateExport.DocumentTemplateObject);
+            // 
+            // TsbtnClose
+            // 
+            this.TsbtnClose.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.TsbtnClose.Image = global::adesso_XTB_Plugins.DocumentTemplateExport.Properties.Resources.tsbClose_Image;
+            this.TsbtnClose.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TsbtnClose.Name = "TsbtnClose";
+            this.TsbtnClose.Size = new System.Drawing.Size(23, 22);
+            this.TsbtnClose.Text = "Close Application";
+            this.TsbtnClose.Click += new System.EventHandler(this.TsbtnClose_Click);
+            // 
+            // TsbtnLoadTemplates
+            // 
+            this.TsbtnLoadTemplates.Image = global::adesso_XTB_Plugins.DocumentTemplateExport.Properties.Resources.CRMOnlineLive_16;
+            this.TsbtnLoadTemplates.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TsbtnLoadTemplates.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TsbtnLoadTemplates.Name = "TsbtnLoadTemplates";
+            this.TsbtnLoadTemplates.Size = new System.Drawing.Size(53, 22);
+            this.TsbtnLoadTemplates.Text = "&Load";
+            this.TsbtnLoadTemplates.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.TsbtnLoadTemplates.ToolTipText = "Load Templates";
+            this.TsbtnLoadTemplates.Click += new System.EventHandler(this.TsbtnLoadTemplates_Click);
+            // 
+            // TsbtnSaveTemplates
+            // 
+            this.TsbtnSaveTemplates.Image = global::adesso_XTB_Plugins.DocumentTemplateExport.Properties.Resources.Save_32x;
+            this.TsbtnSaveTemplates.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TsbtnSaveTemplates.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TsbtnSaveTemplates.Name = "TsbtnSaveTemplates";
+            this.TsbtnSaveTemplates.Size = new System.Drawing.Size(51, 22);
+            this.TsbtnSaveTemplates.Text = "&Save";
+            this.TsbtnSaveTemplates.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.TsbtnSaveTemplates.Click += new System.EventHandler(this.TsbtnSaveTemplates_Click);
+            // 
+            // TsbtnOpenFilePathFolder
+            // 
+            this.TsbtnOpenFilePathFolder.Image = global::adesso_XTB_Plugins.DocumentTemplateExport.Properties.Resources.FolderOpen_32x;
+            this.TsbtnOpenFilePathFolder.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TsbtnOpenFilePathFolder.Name = "TsbtnOpenFilePathFolder";
+            this.TsbtnOpenFilePathFolder.Size = new System.Drawing.Size(56, 22);
+            this.TsbtnOpenFilePathFolder.Text = "&Open";
+            this.TsbtnOpenFilePathFolder.ToolTipText = "Open File Path";
+            this.TsbtnOpenFilePathFolder.Click += new System.EventHandler(this.TsbtnOpenFilePathFolder_Click);
+            // 
+            // TsbtnEditTemplate
+            // 
+            this.TsbtnEditTemplate.Image = global::adesso_XTB_Plugins.DocumentTemplateExport.Properties.Resources.Edit_16x;
+            this.TsbtnEditTemplate.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TsbtnEditTemplate.Name = "TsbtnEditTemplate";
+            this.TsbtnEditTemplate.Size = new System.Drawing.Size(47, 22);
+            this.TsbtnEditTemplate.Text = "&Edit";
+            this.TsbtnEditTemplate.Click += new System.EventHandler(this.TsbtnEditTemplate_Click);
+            // 
+            // TsbtnUpdateTemplates
+            // 
+            this.TsbtnUpdateTemplates.Image = global::adesso_XTB_Plugins.DocumentTemplateExport.Properties.Resources.UploadFile_32x;
+            this.TsbtnUpdateTemplates.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TsbtnUpdateTemplates.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TsbtnUpdateTemplates.Name = "TsbtnUpdateTemplates";
+            this.TsbtnUpdateTemplates.Size = new System.Drawing.Size(65, 22);
+            this.TsbtnUpdateTemplates.Text = "&Update";
+            this.TsbtnUpdateTemplates.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.TsbtnUpdateTemplates.Click += new System.EventHandler(this.TsbtnUpdateTemplates_Click);
+            // 
+            // TsbtnAddTemplates
+            // 
+            this.TsbtnAddTemplates.Image = global::adesso_XTB_Plugins.DocumentTemplateExport.Properties.Resources.AddRow_16x;
+            this.TsbtnAddTemplates.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TsbtnAddTemplates.Name = "TsbtnAddTemplates";
+            this.TsbtnAddTemplates.Size = new System.Drawing.Size(49, 22);
+            this.TsbtnAddTemplates.Text = "&Add";
+            this.TsbtnAddTemplates.Click += new System.EventHandler(this.TsbtnAddTemplates_Click);
+            // 
+            // TsbtnCopyTemplate
+            // 
+            this.TsbtnCopyTemplate.Image = global::adesso_XTB_Plugins.DocumentTemplateExport.Properties.Resources.CopyItem_16x;
+            this.TsbtnCopyTemplate.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TsbtnCopyTemplate.Name = "TsbtnCopyTemplate";
+            this.TsbtnCopyTemplate.Size = new System.Drawing.Size(55, 22);
+            this.TsbtnCopyTemplate.Text = "&Copy";
+            this.TsbtnCopyTemplate.ToolTipText = "Copy the selected template";
+            this.TsbtnCopyTemplate.Click += new System.EventHandler(this.TsbtnCopyTemplate_Click);
+            // 
+            // TsbtnRemoveDgvSelectedItems
+            // 
+            this.TsbtnRemoveDgvSelectedItems.Image = global::adesso_XTB_Plugins.DocumentTemplateExport.Properties.Resources.DeleteTableRow_16x;
+            this.TsbtnRemoveDgvSelectedItems.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TsbtnRemoveDgvSelectedItems.Name = "TsbtnRemoveDgvSelectedItems";
+            this.TsbtnRemoveDgvSelectedItems.Size = new System.Drawing.Size(70, 22);
+            this.TsbtnRemoveDgvSelectedItems.Text = "&Remove";
+            this.TsbtnRemoveDgvSelectedItems.Click += new System.EventHandler(this.TsbtnRemoveDgvSelectedItems_Click);
+            // 
+            // BtnDirectoryFolderDialog
+            // 
+            this.BtnDirectoryFolderDialog.BackgroundImage = global::adesso_XTB_Plugins.DocumentTemplateExport.Properties.Resources.Folder_16x;
+            this.BtnDirectoryFolderDialog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BtnDirectoryFolderDialog.Location = new System.Drawing.Point(320, 32);
+            this.BtnDirectoryFolderDialog.Name = "BtnDirectoryFolderDialog";
+            this.BtnDirectoryFolderDialog.Size = new System.Drawing.Size(28, 24);
+            this.BtnDirectoryFolderDialog.TabIndex = 3;
+            this.BtnDirectoryFolderDialog.UseVisualStyleBackColor = true;
+            this.BtnDirectoryFolderDialog.Click += new System.EventHandler(this.BtnDirectoryFolderDialog_Click);
+            // 
+            // DocumentTemplateExport
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Controls.Add(this.TabCtrlDocumentTemplate);
+            this.Controls.Add(this.TsDocumentTemplateExport);
+            this.Controls.Add(this.TxtDirectoryPath);
+            this.Controls.Add(this.BtnDirectoryFolderDialog);
+            this.Controls.Add(this.LblFilePath);
+            this.Name = "DocumentTemplateExport";
+            this.Size = new System.Drawing.Size(910, 570);
+            this.Load += new System.EventHandler(this.DocumentTemplateExport_Load);
+            this.TabCtrlDocumentTemplate.ResumeLayout(false);
+            this.TabCrmDocumentTemplates.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DgvCrmDocumentTemplates)).EndInit();
+            this.TabDocumentTemplate.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DgvDocumentTemplate)).EndInit();
+            this.TsDocumentTemplateExport.ResumeLayout(false);
+            this.TsDocumentTemplateExport.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BsCrmTemplates)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BsDocumentTemplateObject)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DsEntityTypeComboBoxBindingSource)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label LblFilePath;
+        private System.Windows.Forms.Button BtnDirectoryFolderDialog;
+        private System.Windows.Forms.TextBox TxtDirectoryPath;
+        private System.Windows.Forms.TabControl TabCtrlDocumentTemplate;
+        private System.Windows.Forms.TabPage TabDocumentTemplate;
+        private System.Windows.Forms.DataGridView DgvDocumentTemplate;
+        private System.Windows.Forms.FolderBrowserDialog FbdDirectory;
+        private System.Windows.Forms.ToolTip TtBtnDirectoryFolderDialog;
+        private System.Windows.Forms.ToolTip TtBtnOpenDirectory;
+        private System.Windows.Forms.ToolTip TtBtnExport;
+        private System.Windows.Forms.ToolTip TtBtnImport;
+        private System.Windows.Forms.ToolTip TtTabCtrlDocumentTemplate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.ToolStrip TsDocumentTemplateExport;
+        private System.Windows.Forms.ToolStripButton TsbtnClose;
+        private System.Windows.Forms.TabPage TabCrmDocumentTemplates;
+        private System.Windows.Forms.DataGridView DgvCrmDocumentTemplates;
+        private System.Windows.Forms.DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.BindingSource BsCrmTemplates;
+        private System.Windows.Forms.ToolStripButton TsbtnLoadTemplates;
+        private System.Windows.Forms.ToolStripButton TsbtnSaveTemplates;
+        private System.Windows.Forms.ToolStripButton TsbtnUpdateTemplates;
+        private System.Windows.Forms.ToolStripProgressBar TsprgbLoadUpdate;
+        private System.Windows.Forms.BindingSource BsDocumentTemplateObject;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DocumentTypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EntityTypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ModifiedOnDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ModifiedByDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DescriptionDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.BindingSource DsEntityTypeComboBoxBindingSource;
+        private System.Windows.Forms.ToolStripSeparator ToolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator ToolStripSeparator2;
+        private System.Windows.Forms.ToolStripSeparator ToolStripSeparator3;
+        private System.Windows.Forms.ToolStripSeparator ToolStripSeparator4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DocumentTypeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn EntityTypeDatagridViewComboBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ModifiedOnDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ModifiedByDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DescriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FilePathDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ToolStripButton TsbtnRemoveDgvSelectedItems;
+        private System.Windows.Forms.ToolStripSeparator ToolStripSeparator5;
+        private System.Windows.Forms.ToolStripSeparator ToolStripSeparator6;
+        private System.Windows.Forms.ToolStripButton TsbtnAddTemplates;
+        private System.Windows.Forms.OpenFileDialog OfdAddTemplates;
+        private System.Windows.Forms.ToolStripSeparator ToolStripSeparator7;
+        private System.Windows.Forms.ToolStripButton TsbtnEditTemplate;
+        private System.Windows.Forms.ToolStripSeparator ToolStripSeparator8;
+        private System.Windows.Forms.ToolStripButton TsbtnOpenFilePathFolder;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+        private System.Windows.Forms.ToolStripButton TsbtnCopyTemplate;
+    }
+}

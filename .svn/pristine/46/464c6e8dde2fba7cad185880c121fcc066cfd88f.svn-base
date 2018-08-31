@@ -1,0 +1,150 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.IO;
+using System.Text.RegularExpressions;
+
+using XrmToolBox.Extensibility;
+using XrmToolBox.Extensibility.Interfaces;
+
+using Microsoft.Xrm.Sdk.Query;
+using Microsoft.Xrm.Sdk;
+
+namespace adesso_XTB_Plugins.DocumentTemplateExport
+{
+    public partial class DocumentTemplateExport : PluginControlBase
+    {
+        private Settings settings;
+
+        public DocumentTemplateExport()
+        {
+            InitializeComponent();
+
+            this.settings = new Settings
+            {
+                prefixDocumentTemplate = "prfDT",
+                prefixPersonalDocumentTemplate = "prfPDT"
+            };
+
+        }
+
+        private void txtFilePath_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFileDialog_Click(object sender, EventArgs e)
+        {
+            DialogResult result = folderBrowserDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                txtFilePath.Text = folderBrowserDialog1.SelectedPath + "\\";
+            }
+        }
+
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(txtFilePath.Text))
+            {
+                EntityCollection retrieved = retrieveDocumentTemplates();
+                exportFiles(retrieved, this.settings.prefixDocumentTemplate);
+                retrieved = null;
+
+                retrieved = retrievePersonalDocumentTemplates();
+                exportFiles(retrieved, this.settings.prefixPersonalDocumentTemplate);
+
+                ShowInfoNotification("Export finished!", new Uri("http://github.com/MscrmTools/XrmToolBox"));
+            }
+        }
+
+        private void btnImport_Click(object sender, EventArgs e)
+        {
+            importFiles();
+            ShowInfoNotification("Import finished!", new Uri("http://github.com/MscrmTools/XrmToolBox"));
+        }
+
+        private void DocumentTemplateExport_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private EntityCollection retrieveDocumentTemplates()
+        {
+            QueryExpression qe = new QueryExpression();
+            qe.EntityName = "documenttemplate";
+            qe.ColumnSet = new ColumnSet(true);
+            EntityCollection retrieved = Service.RetrieveMultiple(qe);
+
+            return retrieved;
+        }
+
+        private EntityCollection retrievePersonalDocumentTemplates()
+        {
+            QueryExpression qe = new QueryExpression();
+            qe.EntityName = "personaldocumenttemplate";
+            qe.ColumnSet = new ColumnSet(true);
+            EntityCollection retrieved = Service.RetrieveMultiple(qe);
+
+            return retrieved;
+        }
+
+        private void exportFiles(EntityCollection retrievedTemplates, string prefix)
+        {
+            foreach (var t in retrievedTemplates.Entities)
+            {
+                int doctype = ((OptionSetValue)t["documenttype"]).Value;
+                string fileName = txtFilePath.Text
+                    + t.Id.ToString()
+                    + "_"
+                    + prefix
+                    + "_"
+                    + t["name"]
+                    + (doctype == 1 ? ".xlsx" : ".docx");
+                File.WriteAllBytes(fileName, Convert.FromBase64String((string)t["content"]));
+            }
+        }
+
+        private void importFiles()
+        {
+            if (Directory.Exists(txtFilePath.Text))
+            {
+                var searchPattern = new Regex(@"$(?<=\.(xlsx|docx))", RegexOptions.IgnoreCase);
+                var files = Directory.GetFiles(txtFilePath.Text).Where(f => searchPattern.IsMatch(f));
+
+                char[] splitChar = new char[] { '_' };
+
+                foreach (string s in files)
+                {
+                    string sb = s.Remove(0, txtFilePath.TextLength);
+                    string[] substrings = sb.Split(splitChar, 2);
+                    Guid templateId = new Guid(substrings[0]);
+
+                    string importFile = Convert.ToBase64String(File.ReadAllBytes(s));
+
+                    Entity template = null;
+
+                    if (s.Contains(this.settings.prefixDocumentTemplate))
+                    {
+                        template = new Entity("documenttemplate");
+                    }
+                    if (s.Contains(this.settings.prefixPersonalDocumentTemplate))
+                    {
+                        template = new Entity("personaldocumenttemplate");
+                    }
+
+                    template.Id = templateId;
+                    template["content"] = importFile;
+
+                    Service.Update(template);
+                }
+            }
+        }
+    }
+}
